@@ -22,7 +22,7 @@ def sum_cpf(mults):
 
 
 
-def last_digits(sum):
+def get_last_digits(sum):
     mult = sum * 10
     rest_div = mult % 11
 
@@ -58,8 +58,8 @@ while True:
     sum1 = sum_cpf(mult1)
     sum2 = sum_cpf(mult2)
 
-    digit1 = last_digits(sum1)
-    digit2 = last_digits(sum2)
+    digit1 = get_last_digits(sum1)
+    digit2 = get_last_digits(sum2)
 
     cpf_formated = format_cpf(cpf)
 
